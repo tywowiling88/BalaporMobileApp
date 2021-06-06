@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Balapor_Kawanua</string>
+
+    <string-array name="orderbyInUser">
+        <item>role</item>
+        <item>createdAt</item>
+        <item>namaLengkap</item>
+    </string-array>
+</resources>

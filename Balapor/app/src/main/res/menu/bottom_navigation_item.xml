@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homePage"
+        android:icon="@drawable/ic_home_page"
+        android:title=""/>
+
+<!--    <item-->
+<!--        android:id="@+id/searchPage"-->
+<!--        android:icon="@drawable/ic_search_on"-->
+<!--        android:title=""-->
+<!--        />-->
+
+    <item
+        android:id="@+id/addArticle"
+        android:icon="@drawable/ic_add_article"
+        android:title=""/>
+
+    <item
+        android:id="@+id/accountPage"
+        android:icon="@drawable/ic_account_box"
+        android:title=""
+        />
+
+</menu>

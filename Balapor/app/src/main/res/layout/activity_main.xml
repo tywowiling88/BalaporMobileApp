@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen.MainActivity"
+    android:background="#1f1f1f">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275">
+
+        <View
+            android:id="@+id/logo_sulut"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo_sulut" />
+
+        <View
+            android:id="@+id/logo_balapor"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@drawable/logo_balapor"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/blue1"
+        android:layout_width="30dp"
+        android:layout_height="200dp"
+        android:background="@drawable/blue1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/blue2"
+        android:layout_width="30dp"
+        android:layout_height="250dp"
+        android:background="@drawable/blue2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.220"
+        app:layout_constraintStart_toStartOf="@id/blue1"/>
+
+    <View
+        android:id="@+id/blue3"
+        android:layout_width="30dp"
+        android:layout_height="175dp"
+        android:background="@drawable/blue3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@id/blue2"/>
+
+    <View
+        android:id="@+id/blue4"
+        android:layout_width="30dp"
+        android:layout_height="130dp"
+        android:background="@drawable/blue4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@id/blue3" />
+
+    <View
+        android:id="@+id/blue5"
+        android:layout_width="30dp"
+        android:layout_height="150dp"
+        android:background="@drawable/blue5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@id/blue4"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

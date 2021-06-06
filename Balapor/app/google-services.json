@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "874200357703",
+    "project_id": "balapor-kawanua",
+    "storage_bucket": "balapor-kawanua.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874200357703:android:c0754c414c43fed10bca62",
+        "android_client_info": {
+          "package_name": "umn.ac.id.balapor_kawanua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874200357703-3r7nsnic4dtv3f1l6mafbhubu5i4rvfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4FyILXH0IYigcEpYVc54R0aZNljjRxwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874200357703-3r7nsnic4dtv3f1l6mafbhubu5i4rvfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

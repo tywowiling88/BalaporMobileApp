@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="umn.ac.id.balapor_kawanua">
+    <!-- Permission To Use Internet -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission To Read And Write External Storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Balapor_Kawanua">
+        <activity android:name=".Login.DeveloperTeamActivity"></activity>
+        <activity android:name=".MyProfile.AllArtikelActivity" />
+        <activity android:name=".AdminArtikel.AdminArtikelActivity" />
+        <activity android:name=".MyProfile.UpdateProfileActivity" />
+        <activity android:name=".ArticlePage.AddArticleActivity" />
+        <activity android:name=".AdminInstansi.DetailInstansiActivity" />
+        <activity android:name=".AdminInstansi.AllInstansiActivity" />
+        <activity android:name=".AdminInstansi.TambahInstansiActivity" />
+        <activity android:name=".AdminInstansi.AdminInstansiActivity" />
+        <activity android:name=".AdminAllUser.AdminDetailUserActivity" />
+        <activity android:name=".AdminAllUser.AdminAllUserActivity" />
+        <activity android:name=".AdminProfile.AdminProfileActivity" />
+        <activity android:name=".Login.ForgetPasswordActivity" />
+        <activity android:name=".Register.RegisterActivity" />
+        <activity android:name=".MyProfile.ProfileDetailActivity" />
+        <activity android:name=".HomePage.HomePage" />
+        <activity android:name=".walkthroughpage.WalkThrough" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".SplashScreen.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Actitvity For Crop Image From Library -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+    </application>
+
+</manifest>

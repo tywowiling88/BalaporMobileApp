@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage.HomePage"
+    android:background="@color/lightBlue"
+    android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:padding="15dp"
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/logo_sulut"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BALAPOR.ID"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnWelcomeM"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnHeader"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_bg"
+        >
+
+        <TextView
+            android:padding="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang!"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:padding="15dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Pastikan untuk tidak menyebar berita bohong"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="1400px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnWelcomeM"
+        android:layout_marginTop="15dp"
+        android:measureAllChildren="false"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/lnLayoutInstansi"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvKepolisian"
+                        android:padding="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/edit_text_bg"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDinasPemerintahan"
+                        android:padding="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:background="@drawable/edit_text_bg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRumahSakit"
+                        android:padding="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:background="@drawable/edit_text_bg"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvPemadamKebakaran"
+                        android:padding="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/edit_text_bg"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lnLayoutInstansi2"-->
+<!--                android:padding="15dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/lnLayoutInstansi"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="155dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:padding="15dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/edit_text_bg"-->
+<!--                        android:text="hjkll"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:layout_marginBottom="15dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:padding="15dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="225dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/edit_text_bg"-->
+<!--                        android:text="!@#$%^"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_width="155dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:padding="15dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="225dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/edit_text_bg"-->
+<!--                        android:text="12345"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:layout_marginBottom="15dp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:padding="15dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:background="@drawable/edit_text_bg"-->
+<!--                        android:text="67890"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textSize="17sp"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lnlayoutMenu"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivHomePage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/ic_home_page"
+            android:backgroundTint="@color/purple_200"
+            />
+
+
+        <ImageView
+            android:id="@+id/ivAddArticle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/ic_add_article"
+            android:backgroundTint="@color/purple_200"
+            />
+
+        <ImageView
+            android:id="@+id/ivMyProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_account"
+            android:backgroundTint="@color/purple_200"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
